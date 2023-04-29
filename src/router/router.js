@@ -21,6 +21,16 @@ const routes = [
     name: "Color",
     component: () => import("@/components/color/ColorGame.vue"),
   },
+  {
+    path: "/order/:level",
+    name: "Order",
+    component: () => import("@/components/order/OrderGame.vue"),
+  },
+  {
+    path: "/number/:level",
+    name: "Number",
+    component: () => import("@/components/number/NumberGame.vue"),
+  },
 ];
 
 const router = createRouter({
